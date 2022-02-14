@@ -35,7 +35,8 @@
 
 ### @Configuration 설정 
 
- - 
+ - @Configuration를 사용할 경우 @ComponentScan 어노테이션의 basePackages를 사용해서 패키지를 설정한다.
+ - 패키지가 여러개일 경우 배열 지정 또는 @ComponentScan여러개를 사용한다.
 
 ```
 
