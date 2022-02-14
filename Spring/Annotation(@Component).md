@@ -51,7 +51,5 @@ public class BeanConfigClass { }
 ```
 
 
-[작성중...]
-
 ### 참조 
 Link:  [@Component 애노테이션 및 함께 사용하는 애노테이션 정리] (https://atoz-develop.tistory.com/entry/Spring-Component-%EC%95%A0%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98-%EB%B0%8F-%ED%95%A8%EA%BB%98-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%95%A0%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98-%EC%A0%95%EB%A6%AC)
