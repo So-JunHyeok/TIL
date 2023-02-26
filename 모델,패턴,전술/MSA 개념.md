@@ -5,6 +5,7 @@
  - 소규모의 독립적인 서비스를 구성하여 기능을 제공하고 API를 활용하여 서로을 접근하는 방식을 말한다.
  - 모노리스 시스템의 문제점을 해결해 줄 수 있는 방법
 
+
 ## 모노리시 시스템의 문제점
  - 모노리스 시스템 : 하나의 서버에 서비스할 모든 애플리케이션이 한 덩어리로 구성되어 있는 시스템을 말한다. 
  - 클라우드의 탄력적인 자원사용이 비효율적이다.(스케일 아웃시에 모노리스 전체가 확장된다)
@@ -22,8 +23,20 @@
 ![마이크로서비스](https://user-images.githubusercontent.com/43057593/221401297-e9ffd310-7fc7-434e-9215-6b597949ad25.png)
 
 
+## SOA와 MSA의 차이점 
+ - SOA란 서비스 지향 설계(Service Oriented Architecture)로 MSA와 마찬가지로 작은 단위로 서비스를 구성하지만 공통서비스를 통해 재가용성을 늘리고 필요에 따라 유연하게 처리하는 것에 중점을 두었다.
+ - SOA는 재사용성향상을 위해 공통서비스를 식별한 이후에 다른 서비스들을 사용하기 때문에 의존관계가 많이 발생하게되어 독립적인 배포나 변경에 문제가 있다.  
+  ![모놀리스SOAMSA식별](https://user-images.githubusercontent.com/43057593/221404025-7b010f33-03c3-42b7-9f47-bfc64cb25cf8.JPG)
+
+ 
+ ## 기타 
+ - MSA는 서비스들이 독립적이기 때문에 코드에 중복이 발생한다.
 
 
+<br>
+<br>
 
 ## 참고 
 https://www.inflearn.com/course/%EB%8F%84%EB%A9%94%EC%9D%B8%EC%A3%BC%EB%8F%84-%EC%84%A4%EA%B3%84-%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4
+https://always-kimkim.tistory.com/entry/SOA%EC%99%80-MSA%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90
+https://wiki.webnori.com/display/devbegin/SOA+VS+MSA
