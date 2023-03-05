@@ -117,9 +117,9 @@ public enum CalculatorType {
  
  ```
  ### 데이터 그룹관리
-  - 어떤 결제수단으로 진행되었는지, 해당 결제 방식이 어느 결제 종류에 속하는지 확인 할 수 있어야하는 조건이라면 
-  - enum을 적용하지 않고 if문으로 구현한다면 
-
+  - 어떤 결제수단으로 진행되었는지, 해당 결제 방식이 어느 결제 종류에 속하는지 확인 할 수 있어야하는 조건이고 enum을 적용하지 않고 if문으로 구현한다면
+  - 위에 코드에서는 조건값과 리턴값의 관계[대체값? 포함관계?]를 확인 할 수 없다(실제로는 결제종류가 결제수단을 포함하고 있다)
+  - 입력값과 결과값이 예측이 불가하기 때문에 결과값 추가시 그것을 검증하는 코드를 추가해야한다.
  ```
      public static String getPayGroup(String payCode){
 
@@ -134,8 +134,7 @@ public enum CalculatorType {
         }
     }
  ```
- - 위에 코드에서는 조건값과 리턴값의 관계[대체값? 포함관계?]를 확인 할 수 없다(실제로는 결제종류가 결제수단을 포함하고 있다)
- - 입력값과 결과값이 예측이 불가하기 때문에 결과값 추가시 그것을 검증하는 코드를 추가해야한다.
+ - 그룹별 기능을 추가하게 된다면 그룹을 나누는 코드를 계속 만들어야한다.
 ```
     public void pushByPayGroup(final String payGroupCode){
         if("CASH".equals(payGroupCode)){
@@ -167,7 +166,7 @@ public enum CalculatorType {
         System.out.println(payGroupCode+"결제print메소드 실행");
     }
 ```
- - 그룹별 기능을 추가하게 된다면 그룹을 나누는 코드를 계속 만들어야한다.
+
 
 
  
